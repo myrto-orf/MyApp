@@ -1,0 +1,769 @@
+name: myapp
+description: A exported flutter project from FUNCTION12
+
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.2 <3.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  google_fonts: ^3.0.1
+  flutter_screenutil: ^5.6.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^1.0.4
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/assets/images/avatars-3davatar18.png
+    - assets/assets/images/leading-icon.png
+    - assets/assets/images/icon-file-attach.png
+    - assets/assets/images/icon-phone.png
+    - assets/assets/images/icon-addemoji.png
+    - assets/assets/images/avatars-3davatar30.png
+    - assets/assets/images/avatars-3davatar13.png
+    - assets/assets/images/checkboxes.png
+    - assets/assets/images/image-3.png
+    - assets/assets/images/group-1.png
+    - assets/assets/images/icons-search.png
+    - assets/assets/images/icon-micro.png
+    - assets/assets/images/checkboxes-Kdw.png
+    - assets/assets/images/checkboxes-P9w.png
+    - assets/assets/images/group-1-dX3.png
+    - assets/assets/images/checkboxes-ujT.png
+    - assets/assets/images/checkboxes-q7K.png
+    - assets/assets/images/icon-home.png
+    - assets/assets/images/icons-menu.png
+    - assets/assets/images/enter-key.png
+    - assets/assets/images/icon-map.png
+    - assets/assets/images/light-color-key-border03.png
+    - assets/assets/images/leading-icon-ZBj.png
+    - assets/assets/images/group-1-HdX.png
+    - assets/assets/images/vector.png
+    - assets/assets/images/checkboxes-nqB.png
+    - assets/assets/images/avatars-3davatar7.png
+    - assets/assets/images/avatars-3davatar24.png
+    - assets/assets/images/checkboxes-4xD.png
+    - assets/assets/images/leading-icon-yJV.png
+    - assets/assets/images/auto-group-jwa1.png
+    - assets/assets/images/icons-check.png
+    - assets/assets/images/leading-icon-zxu.png
+    - assets/assets/images/st-trailing-icon.png
+    - assets/assets/images/q.png
+    - assets/assets/images/avatars-3davatar23.png
+    - assets/assets/images/icon-book.png
+    - assets/assets/images/st-trailing-icon-AA1.png
+    - assets/assets/images/group-2608601.png
+    - assets/assets/images/emoji.png
+    - assets/assets/images/avatars-3davatar6.png
+    - assets/assets/images/icon-video.png
+    - assets/assets/images/st-trailing-icon-FEV.png
+    - assets/assets/images/icon-photo.png
+    - assets/assets/images/line-7.png
+    - assets/assets/images/icon-key.png
+    - assets/assets/images/auto-group-2fdf.png
+    - assets/assets/images/avatars-3davatar28.png
+    - assets/assets/images/icons-modeedit.png
+    - assets/assets/images/icon-2people.png
+    - assets/assets/images/st-trailing-icon-58y.png
+    - assets/assets/images/icons-accountcirclefilled.png
+    - assets/assets/images/vector-LKo.png
+    - assets/assets/images/checkboxes-bFj.png
+    - assets/assets/images/leading-icon-Vc1.png
+    - assets/assets/images/group-2608599.png
+    - assets/assets/images/st-trailing-icon-8us.png
+    - assets/assets/images/icon-person.png
+    - assets/assets/images/icon-container.png
+    - assets/assets/images/auto-group-kvuo.png
+    - assets/assets/images/backspace.png
+    - assets/assets/images/icon-camera.png
+    - assets/assets/images/checkboxes-c6H.png
+    - assets/assets/images/left-shift.png
+    - assets/assets/images/icon-chat.png
+    - assets/assets/images/auto-group-thyq.png
+    - assets/assets/images/icon-user-add.png
+    - assets/assets/images/avatars-3davatar22.png
+    - assets/assets/images/user-add.png
+    - assets/assets/images/avatars-3davatar8.png
+    - assets/assets/images/avatars-3davatar28-t61.png
+    - assets/prototype/images/icon-container-DaM.png
+    - assets/assets/images/group-1-VgZ.png
+    - assets/assets/images/checkboxes-Geq.png
+    - assets/assets/images/auto-group-osgm.png
+    - assets/assets/images/checkboxes-7fT.png
+    - assets/assets/images/avatars-3davatar21.png
+    - assets/assets/images/icon-container-g1j.png
+    - assets/assets/images/icon-hat.png
+    - assets/assets/images/checkboxes-P4Z.png
+    - assets/assets/images/icon-container-JxD.png
+    - assets/assets/images/icon-pin.png
+    - assets/assets/images/avatars-3davatar14.png
+    - assets/assets/images/checkboxes-6S9.png
+    - assets/assets/images/avatars-3davatar15.png
+    - assets/prototype/images/group-2608537.png
+    - assets/assets/images/avatars-3davatar10.png
+    - assets/assets/images/avatars-3davatar25.png
+    - assets/assets/images/leading-icon-Agu.png
+    - assets/prototype/images/home-03.png
+    - assets/assets/images/avatars-3davatar7-tXw.png
+    - assets/assets/images/avatars-3davatar5.png
+    - assets/assets/images/avatars-3davatar4.png
+    - assets/assets/images/avatars-3davatar16.png
+    - assets/assets/images/image-1.png
+    - assets/assets/images/avatars-3davatar21-dkZ.png
+    - assets/assets/images/avatars-3davatar18-u8Z.png
+    - assets/assets/images/avatars-3davatar28-kNZ.png
+    - assets/assets/images/image-2.png
+    - assets/assets/images/avatars-3davatar26.png
+    - assets/prototype/images/icon.png
+    - assets/prototype/images/vector-tmb.png
+    - assets/prototype/images/icon-container-vof.png
+    - assets/prototype/images/auto-group-8xdk.png
+    - assets/prototype/images/group-2608537-LZ3.png
+    - assets/prototype/images/icon-container-Q29.png
+    - assets/prototype/images/vector-85T.png
+    - assets/prototype/images/avatars-3davatar21-3PK.png
+    - assets/prototype/images/icon-container-Zzd.png
+    - assets/prototype/images/avatars-3davatar13-mCH.png
+    - assets/prototype/images/avatars-3davatar16-Aso.png
+    - assets/prototype/images/group-2608565.png
+    - assets/prototype/images/group-2608566.png
+    - assets/prototype/images/icon-PKT.png
+    - assets/prototype/images/vector-ycH.png
+    - assets/prototype/images/auto-group-sqwd.png
+    - assets/prototype/images/avatars-3davatar7-tER.png
+    - assets/prototype/images/avatars-3davatar25-h4y.png
+    - assets/prototype/images/avatars-3davatar10-GdB.png
+    - assets/prototype/images/avatars-3davatar26-vVK.png
+    - assets/prototype/images/avatars-3davatar18-X6m.png
+    - assets/prototype/images/avatars-3davatar7-oa5.png
+    - assets/prototype/images/avatars-3davatar24-C1j.png
+    - assets/prototype/images/avatars-3davatar15-PDF.png
+    - assets/prototype/images/avatars-3davatar28-ugh.png
+    - assets/prototype/images/icon-container-Tau.png
+    - assets/prototype/images/pexels-irina-iriser-1090977-1.png
+    - assets/prototype/images/home-03-9Q9.png
+    - assets/prototype/images/avatars-3davatar5-QVT.png
+    - assets/prototype/images/icon-container-daV.png
+    - assets/prototype/images/vector-ta1.png
+    - assets/prototype/images/avatars-3davatar7-Czh.png
+    - assets/prototype/images/avatars-3davatar21-Egu.png
+    - assets/prototype/images/image-2-Hgq.png
+    - assets/prototype/images/st-trailing-icon-LXo.png
+    - assets/prototype/images/avatars-3davatar4-QP7.png
+    - assets/prototype/images/avatars-3davatar23-981.png
+    - assets/prototype/images/auto-group-bue1.png
+    - assets/prototype/images/icon-container-9Rw.png
+    - assets/prototype/images/leading-icon-x37.png
+    - assets/prototype/images/vector-Ygm.png
+    - assets/prototype/images/icon-container-jKb.png
+    - assets/prototype/images/avatars-3davatar14-9ED.png
+    - assets/prototype/images/vector-rVj.png
+    - assets/prototype/images/icon-container-wDf.png
+    - assets/prototype/images/vector-MTj.png
+    - assets/prototype/images/auto-group-xpmj.png
+    - assets/prototype/images/icon-container-Jpd.png
+    - assets/prototype/images/icon-hrD.png
+    - assets/prototype/images/icon-Vw3.png
+    - assets/prototype/images/icon-RmF.png
+    - assets/prototype/images/icon-yJ5.png
+    - assets/prototype/images/st-trailing-icon-Zkh.png
+    - assets/prototype/images/avatars-3davatar30-CUD.png
+    - assets/prototype/images/icon-container-2q3.png
+    - assets/prototype/images/avatars-3davatar8-KXs.png
+    - assets/prototype/images/avatars-3davatar6-rv9.png
+    - assets/prototype/images/icon-container-h2u.png
+    - assets/prototype/images/vector-fKj.png
+    - assets/prototype/images/avatars-3davatar22-qHX.png
+    - assets/prototype/images/avatars-3davatar21-YYM.png
+    - assets/prototype/images/avatars-3davatar7-VY1.png
+    - assets/prototype/images/leading-icon-CtD.png
+    - assets/prototype/images/icon-m25.png
+    - assets/prototype/images/icon-5am.png
+    - assets/prototype/images/icon-oRw.png
+    - assets/prototype/images/avatars-3davatar16-K1o.png
+    - assets/prototype/images/rectangle-33-bg.png
+    - assets/prototype/images/avatars-3davatar7-9b3.png
+    - assets/prototype/images/icon-TdX.png
+    - assets/prototype/images/icon-xTo.png
+    - assets/prototype/images/icon-cX7.png
+    - assets/prototype/images/icon-Tpq.png
+    - assets/prototype/images/vector-f33.png
+    - assets/prototype/images/icon-9xq.png
+    - assets/prototype/images/icon-KPB.png
+    - assets/prototype/images/icon-container-2qs.png
+    - assets/prototype/images/icon-ujT.png
+    - assets/prototype/images/icon-JNR.png
+    - assets/prototype/images/icon-container-ngd.png
+    - assets/prototype/images/icon-NwP.png
+    - assets/prototype/images/icon-1bb.png
+    - assets/prototype/images/icon-Ex5.png
+    - assets/prototype/images/icon-gUD.png
+    - assets/prototype/images/icon-M3b.png
+    - assets/prototype/images/leading-icon-kqb.png
+    - assets/prototype/images/st-trailing-icon-9YH.png
+    - assets/prototype/images/icon-ZvV.png
+    - assets/prototype/images/auto-group-3ads.png
+    - assets/prototype/images/icon-container-pJZ.png
+    - assets/prototype/images/icon-ZND.png
+    - assets/prototype/images/icon-cvy.png
+    - assets/prototype/images/icon-6tM.png
+    - assets/prototype/images/vector-F2M.png
+    - assets/prototype/images/auto-group-9fsd.png
+    - assets/prototype/images/auto-group-sqkf.png
+    - assets/prototype/images/icon-wjb.png
+    - assets/prototype/images/icon-ti1.png
+    - assets/prototype/images/icon-D4h.png
+    - assets/prototype/images/icon-Ems.png
+    - assets/prototype/images/icon-7U1.png
+    - assets/prototype/images/icon-rAZ.png
+    - assets/prototype/images/icon-zds.png
+    - assets/prototype/images/icon-AcM.png
+    - assets/prototype/images/auto-group-sasf.png
+    - assets/prototype/images/icon-txd.png
+    - assets/prototype/images/icon-X17.png
+    - assets/prototype/images/avatars-3davatar7-TuP.png
+    - assets/prototype/images/rectangle-32-bg.png
+    - assets/prototype/images/icon-bdP.png
+    - assets/prototype/images/icon-mgZ.png
+    - assets/prototype/images/icon-C4u.png
+    - assets/prototype/images/icon-rAH.png
+    - assets/prototype/images/icon-jQZ.png
+    - assets/prototype/images/vector-4Ff.png
+    - assets/prototype/images/icon-bG9.png
+    - assets/prototype/images/leading-icon-VCH.png
+    - assets/prototype/images/icon-V8R.png
+    - assets/prototype/images/icon-j8q.png
+    - assets/prototype/images/icon-LaZ.png
+    - assets/prototype/images/icon-u3K.png
+    - assets/prototype/images/icon-sjs.png
+    - assets/prototype/images/st-trailing-icon-uMX.png
+    - assets/prototype/images/icon-W3o.png
+    - assets/prototype/images/icon-r1s.png
+    - assets/prototype/images/icon-ery.png
+    - assets/prototype/images/auto-group-jas1.png
+    - assets/prototype/images/icon-Dch.png
+    - assets/prototype/images/icon-MDf.png
+    - assets/prototype/images/icon-gU5.png
+    - assets/prototype/images/auto-group-edvd.png
+    - assets/prototype/images/icon-WEh.png
+    - assets/prototype/images/icon-efF.png
+    - assets/prototype/images/icon-JRT.png
+    - assets/prototype/images/icon-xqT.png
+    - assets/prototype/images/icon-wuP.png
+    - assets/prototype/images/icon-NCD.png
+    - assets/prototype/images/icon-nsF.png
+    - assets/prototype/images/icon-hwB.png
+    - assets/prototype/images/vector-29B.png
+    - assets/prototype/images/icon-keH.png
+    - assets/prototype/images/icon-6z9.png
+    - assets/prototype/images/icon-jCH.png
+    - assets/prototype/images/icon-B8Z.png
+    - assets/prototype/images/icon-rof.png
+    - assets/prototype/images/icon-MvV.png
+    - assets/prototype/images/icon-eiZ.png
+    - assets/prototype/images/icon-fwj.png
+    - assets/prototype/images/icon-qGH.png
+    - assets/prototype/images/icon-BjB.png
+    - assets/prototype/images/icon-rsF.png
+    - assets/prototype/images/icon-container-WCM.png
+    - assets/prototype/images/icon-Zru.png
+    - assets/prototype/images/icon-hLh.png
+    - assets/prototype/images/icon-Rnu.png
+    - assets/prototype/images/icon-6VT.png
+    - assets/prototype/images/icon-sFb.png
+    - assets/prototype/images/icon-Vyf.png
+    - assets/prototype/images/icon-fYZ.png
+    - assets/prototype/images/icon-container-EHs.png
+    - assets/prototype/images/icon-CKP.png
+    - assets/prototype/images/icon-container-nbw.png
+    - assets/prototype/images/leading-icon-in1.png
+    - assets/prototype/images/icon-container-45s.png
+    - assets/prototype/images/avatars-3davatar7-exV.png
+    - assets/prototype/images/rectangle-31-bg.png
+    - assets/prototype/images/st-trailing-icon-gku.png
+    - assets/prototype/images/vector-vuT.png
+    - assets/prototype/images/icon-container-Fkh.png
+    - assets/prototype/images/vector-t1s.png
+    - assets/prototype/images/icon-container-eSh.png
+    - assets/prototype/images/avatars-3davatar16-QqT.png
+    - assets/prototype/images/icon-container-dJD.png
+    - assets/prototype/images/vector-JMb.png
+    - assets/prototype/images/st-trailing-icon-yc9.png
+    - assets/prototype/images/vector-V4h.png
+    - assets/prototype/images/icon-container-bQH.png
+    - assets/prototype/images/auto-group-bxjo.png
+    - assets/prototype/images/icon-container-cJR.png
+    - assets/prototype/images/vector-hwK.png
+    - assets/prototype/images/avatars-3davatar7-zqB.png
+    - assets/prototype/images/icon-container-kTf.png
+    - assets/prototype/images/leading-icon-NwF.png
+    - assets/prototype/images/vector-2vy.png
+    - assets/prototype/images/icon-container-ySm.png
+    - assets/prototype/images/auto-group-j6g5.png
+    - assets/prototype/images/st-trailing-icon-wG1.png
+    - assets/prototype/images/icon-container-HU9.png
+    - assets/prototype/images/auto-group-dmws.png
+    - assets/prototype/images/leading-icon-Fph.png
+    - assets/prototype/images/avatars-3davatar30-rhj.png
+    - assets/prototype/images/avatars-3davatar21-DDP.png
+    - assets/prototype/images/avatars-3davatar21-GDK.png
+    - assets/prototype/images/avatars-3davatar21-buX.png
+    - assets/prototype/images/avatars-3davatar21-rey.png
+    - assets/prototype/images/avatars-3davatar8-sim.png
+    - assets/prototype/images/avatars-3davatar21-a7w.png
+    - assets/prototype/images/avatars-3davatar7-hVw.png
+    - assets/prototype/images/avatars-3davatar18-6p5.png
+    - assets/prototype/images/avatars-3davatar6-PNm.png
+    - assets/prototype/images/avatars-3davatar10-krq.png
+    - assets/prototype/images/avatars-3davatar6-3WM.png
+    - assets/prototype/images/avatars-3davatar18-6Dj.png
+    - assets/prototype/images/avatars-3davatar23-Z1f.png
+    - assets/prototype/images/avatars-3davatar21-abo.png
+    - assets/prototype/images/avatars-3davatar30-z3X.png
+    - assets/prototype/images/avatars-3davatar15-eEq.png
+    - assets/prototype/images/avatars-3davatar28-2L5.png
+    - assets/prototype/images/leading-icon-omP.png
+    - assets/prototype/images/avatars-3davatar21-yxZ.png
+    - assets/prototype/images/icon-91f.png
+    - assets/prototype/images/auto-group-ound.png
+    - assets/prototype/images/group-1-YwF.png
+    - assets/prototype/images/group-1-JUd.png
+    - assets/prototype/images/icon-E9K.png
+    - assets/prototype/images/file-attach-01.png
+    - assets/prototype/images/avatars-3davatar10-Vqo.png
+    - assets/prototype/images/vector-yVP.png
+    - assets/prototype/images/vector-qpR.png
+    - assets/prototype/images/group-1-PWV.png
+    - assets/prototype/images/auto-group-5tvu.png
+    - assets/prototype/images/leading-icon-RaD.png
+    - assets/prototype/images/icon-container-tA1.png
+    - assets/prototype/images/leading-icon-3WM.png
+    - assets/prototype/images/group-1-3cH.png
+    - assets/prototype/images/icon-whf.png
+    - assets/prototype/images/auto-group-gzh3.png
+    - assets/prototype/images/group-2608541.png
+    - assets/prototype/images/leading-icon-Bc1.png
+    - assets/prototype/images/leading-icon-rHT.png
+    - assets/prototype/images/st-trailing-icon-48d.png
+    - assets/prototype/images/group-2608543.png
+    - assets/prototype/images/vector-YJh.png
+    - assets/prototype/images/group-1-UCM.png
+    - assets/prototype/images/icon-container-wDF.png
+    - assets/prototype/images/group-2608542.png
+    - assets/prototype/images/st-trailing-icon-QZK.png
+    - assets/prototype/images/st-trailing-icon-uky.png
+    - assets/prototype/images/st-trailing-icon-pZ3.png
+    - assets/prototype/images/group-2608540.png
+    - assets/prototype/images/leading-icon-jvm.png
+    - assets/prototype/images/st-trailing-icon-mS5.png
+    - assets/prototype/images/icon-container-APP.png
+    - assets/prototype/images/st-trailing-icon-bg1.png
+    - assets/prototype/images/checkboxes-fQy.png
+    - assets/prototype/images/avatars-3davatar10-oNd.png
+    - assets/prototype/images/checkboxes-usT.png
+    - assets/prototype/images/avatars-3davatar7-dVw.png
+    - assets/prototype/images/group-1-za9.png
+    - assets/prototype/images/leading-icon-ciR.png
+    - assets/prototype/images/checkboxes-7rm.png
+    - assets/prototype/images/checkboxes-MEV.png
+    - assets/prototype/images/avatars-3davatar7-ZZP.png
+    - assets/prototype/images/avatars-3davatar10-hU1.png
+    - assets/prototype/images/avatars-3davatar6-bBb.png
+    - assets/prototype/images/avatars-3davatar23-8YD.png
+    - assets/prototype/images/avatars-3davatar30-BQ9.png
+    - assets/prototype/images/avatars-3davatar10-FCy.png
+    - assets/prototype/images/avatars-3davatar21-cH3.png
+    - assets/prototype/images/avatars-3davatar30-rBF.png
+    - assets/prototype/images/avatars-3davatar26-K7T.png
+    - assets/prototype/images/avatars-3davatar10-bGZ.png
+    - assets/prototype/images/avatars-3davatar10-fWu.png
+    - assets/prototype/images/avatars-3davatar16-QVT.png
+    - assets/prototype/images/checkboxes-Y8u.png
+    - assets/prototype/images/group-1-yAV.png
+    - assets/prototype/images/leading-icon-Dt1.png
+    - assets/prototype/images/st-trailing-icon-Ui1.png
+    - assets/prototype/images/st-trailing-icon-qLZ.png
+    - assets/prototype/images/checkboxes-7hF.png
+    - assets/prototype/images/checkboxes-hnu.png
+    - assets/prototype/images/leading-icon-baV.png
+    - assets/prototype/images/checkboxes-gtm.png
+    - assets/prototype/images/group-1-k9b.png
+    - assets/prototype/images/icons-morevert24px.png
+    - assets/prototype/images/checkboxes-E85.png
+    - assets/prototype/images/checkboxes-KBK.png
+    - assets/prototype/images/icons-morevert24px-JHB.png
+    - assets/prototype/images/icon-container-rzq.png
+    - assets/prototype/images/checkboxes-RAM.png
+    - assets/prototype/images/icons-morevert24px-2qb.png
+    - assets/prototype/images/leading-icon-1Zw.png
+    - assets/prototype/images/icons-morevert24px-ffb.png
+    - assets/prototype/images/auto-group-v96m.png
+    - assets/prototype/images/icons-morevert24px-jTK.png
+    - assets/prototype/images/icon-container-Tem.png
+    - assets/prototype/images/vector-sP3.png
+    - assets/prototype/images/icons-morevert24px-weD.png
+    - assets/prototype/images/auto-group-bp17.png
+    - assets/prototype/images/user-add-XuP.png
+    - assets/prototype/images/icons-morevert24px-Lfw.png
+    - assets/prototype/images/icons-morevert24px-GDB.png
+    - assets/prototype/images/avatars-3davatar10-J7P.png
+    - assets/prototype/images/avatars-3davatar18-wM7.png
+    - assets/prototype/images/avatars-3davatar26-vGD.png
+    - assets/prototype/images/avatars-3davatar25-dpq.png
+    - assets/prototype/images/avatars-3davatar24-bg.png
+    - assets/prototype/images/avatars-3davatar15-T4Z.png
+    - assets/prototype/images/avatars-3davatar28-Qdj.png
+    - assets/prototype/images/avatars-3davatar13-Qyj.png
+    - assets/prototype/images/avatars-3davatar24-bgh.png
+    - assets/prototype/images/avatars-3davatar7-FWD.png
+    - assets/prototype/images/avatars-3davatar3.png
+    - assets/prototype/images/avatars-3davatar16-iD3.png
+    - assets/prototype/images/icons-morevert24px-TZP.png
+    - assets/prototype/images/icons-morevert24px-w9P.png
+    - assets/prototype/images/user-add-sLh.png
+    - assets/prototype/images/icon-container-WLV.png
+    - assets/prototype/images/icons-morevert24px-4S1.png
+    - assets/prototype/images/icons-morevert24px-DLR.png
+    - assets/prototype/images/leading-icon-UDj.png
+    - assets/prototype/images/icons-morevert24px-arR.png
+    - assets/prototype/images/vector-YfF.png
+    - assets/prototype/images/vector-qDX.png
+    - assets/prototype/images/icons-morevert24px-2yT.png
+    - assets/prototype/images/auto-group-wy1o.png
+    - assets/prototype/images/icon-container-Njo.png
+    - assets/prototype/images/avatars-3davatar10-6xm.png
+    - assets/prototype/images/auto-group-p1uh.png
+    - assets/prototype/images/avatars-3davatar7-2q3.png
+    - assets/prototype/images/st-trailing-icon-NQd.png
+    - assets/prototype/images/avatars-3davatar18-meM.png
+    - assets/prototype/images/icons-morevert24px-gv1.png
+    - assets/prototype/images/avatars-3davatar28-vzq.png
+    - assets/prototype/images/icons-morevert24px-kWZ.png
+    - assets/prototype/images/icons-morevert24px-F9o.png
+    - assets/prototype/images/icon-container-FAM.png
+    - assets/prototype/images/icon-container-VgH.png
+    - assets/prototype/images/user-add-GeH.png
+    - assets/prototype/images/leading-icon-ugZ.png
+    - assets/prototype/images/auto-group-r1dw.png
+    - assets/prototype/images/st-trailing-icon-FeD.png
+    - assets/prototype/images/icons-morevert24px-zYD.png
+    - assets/prototype/images/auto-group-saud.png
+    - assets/prototype/images/icons-morevert24px-82Z.png
+    - assets/prototype/images/vector-Znd.png
+    - assets/prototype/images/avatars-3davatar24-bg-9yF.png
+    - assets/prototype/images/avatars-3davatar24-2M3.png
+    - assets/prototype/images/icons-morevert24px-UTw.png
+    - assets/prototype/images/avatars-3davatar3-1vM.png
+    - assets/prototype/images/avatars-3davatar15-r2h.png
+    - assets/prototype/images/avatars-3davatar16-ouP.png
+    - assets/prototype/images/avatars-3davatar25-viy.png
+    - assets/prototype/images/avatars-3davatar26-ZZX.png
+    - assets/prototype/images/avatars-3davatar13-PWV.png
+    - assets/prototype/images/icons-morevert24px-97K.png
+    - assets/prototype/images/icons-morevert24px-iMj.png
+    - assets/prototype/images/icons-morevert24px-HBs.png
+    - assets/prototype/images/avatars-3davatar24-Znm.png
+    - assets/prototype/images/avatars-3davatar26-pM3.png
+    - assets/prototype/images/avatars-3davatar13-SnH.png
+    - assets/prototype/images/avatars-3davatar15-zCm.png
+    - assets/prototype/images/avatars-3davatar16-Hp1.png
+    - assets/prototype/images/avatars-3davatar18-6hT.png
+    - assets/prototype/images/avatars-3davatar24-bg-VZF.png
+    - assets/prototype/images/avatars-3davatar7-KYR.png
+    - assets/prototype/images/avatars-3davatar25-bVX.png
+    - assets/prototype/images/avatars-3davatar3-S5s.png
+    - assets/prototype/images/avatars-3davatar28-iCm.png
+    - assets/prototype/images/auto-group-sapu.png
+    - assets/prototype/images/auto-group-aumf.png
+    - assets/prototype/images/auto-group-ijeh.png
+    - assets/prototype/images/icon-YNh.png
+    - assets/prototype/images/icons-modeedit24px.png
+    - assets/prototype/images/paper-plane-paper-airplane-icon-christmas-iconset-benz-lee-13-2.png
+    - assets/prototype/images/key-02.png
+    - assets/prototype/images/icons-modeedit24px-Xad.png
+    - assets/prototype/images/paper-plane-paper-airplane-icon-christmas-iconset-benz-lee-13-2-n2y.png
+    - assets/prototype/images/avatars-3davatar10-iFo.png
+    - assets/prototype/images/icons-modeedit24px-nD3.png
+    - assets/prototype/images/leading-icon-g2q.png
+    - assets/prototype/images/icons-modeedit24px-uXB.png
+    - assets/prototype/images/auto-group-zhts.png
+    - assets/prototype/images/icon-SLd.png
+    - assets/prototype/images/icon-F8q.png
+    - assets/prototype/images/vector-Jso.png
+    - assets/prototype/images/icons-modeedit24px-uD7.png
+    - assets/prototype/images/light-color-key-border03-Mqo.png
+    - assets/prototype/images/file-attach-01-nHs.png
+    - assets/prototype/images/icons-modeedit24px-Zdo.png
+    - assets/prototype/images/auto-group-murh.png
+    - assets/prototype/images/icons-modeedit24px-aXP.png
+    - assets/prototype/images/enter-key-6CD.png
+    - assets/prototype/images/q-ZS5.png
+    - assets/prototype/images/icon-Pqf.png
+    - assets/prototype/images/avatars-3davatar10-n1j.png
+    - assets/prototype/images/left-shift-NWy.png
+    - assets/prototype/images/backspace-qiM.png
+    - assets/prototype/images/icons-modeedit24px-JvR.png
+    - assets/prototype/images/emoji-iNq.png
+    - assets/prototype/images/avatars-3davatar10-LLM.png
+    - assets/prototype/images/avatars-3davatar10-XN5.png
+    - assets/prototype/images/paper-plane-paper-airplane-icon-christmas-iconset-benz-lee-13-2-guB.png
+    - assets/prototype/images/group-2608566-BtR.png
+    - assets/prototype/images/icon-container-T6d.png
+    - assets/prototype/images/home-03-B9F.png
+    - assets/prototype/images/vector-5au.png
+    - assets/prototype/images/icon-container-9xH.png
+    - assets/prototype/images/icons-modeedit24px-Waq.png
+    - assets/prototype/images/auto-group-ksyz.png
+    - assets/prototype/images/icons-accountcirclefilled24px.png
+    - assets/prototype/images/group-2608565-sMF.png
+    - assets/prototype/images/icon-container-9bs.png
+    - assets/prototype/images/group-2608601-eEH.png
+    - assets/prototype/images/group-2608600.png
+    - assets/prototype/images/avatars-3davatar7-iQd.png
+    - assets/prototype/images/group-2608620.png
+    - assets/prototype/images/group-2608599-b8Z.png
+    - assets/prototype/images/icon-Fiu.png
+    - assets/prototype/images/group-2608621.png
+    - assets/prototype/images/vector-3fB.png
+    - assets/prototype/images/group-2608601-t7P.png
+    - assets/prototype/images/light-color-key-border03-ysB.png
+    - assets/prototype/images/enter-key-Eo7.png
+    - assets/prototype/images/icon-4td.png
+    - assets/prototype/images/left-shift-myw.png
+    - assets/prototype/images/group-2608599-dKs.png
+    - assets/prototype/images/emoji-mSM.png
+    - assets/prototype/images/backspace-tJH.png
+    - assets/prototype/images/group-2608600-zWq.png
+    - assets/prototype/images/icons-accountcirclefilled24px-hty.png
+    - assets/prototype/images/q-ggD.png
+    - assets/prototype/images/icons-modeedit24px-24d.png
+    - assets/prototype/images/checkboxes-3mF.png
+    - assets/prototype/images/home-03-fbT.png
+    - assets/prototype/images/group-1-qj3.png
+    - assets/prototype/images/checkboxes-fEm.png
+    - assets/prototype/images/checkboxes-BZ7.png
+    - assets/prototype/images/checkboxes-hho.png
+    - assets/prototype/images/checkboxes-ikV.png
+    - assets/prototype/images/q-Jqb.png
+    - assets/prototype/images/leading-icon-QkV.png
+    - assets/prototype/images/group-1-XZP.png
+    - assets/prototype/images/st-trailing-icon-5w3.png
+    - assets/prototype/images/st-trailing-icon-ji5.png
+    - assets/prototype/images/checkboxes-XCh.png
+    - assets/prototype/images/left-shift-UW9.png
+    - assets/prototype/images/checkboxes-CCu.png
+    - assets/prototype/images/backspace-fDP.png
+    - assets/prototype/images/leading-icon-ARK.png
+    - assets/prototype/images/light-color-key-border03-7Q9.png
+    - assets/prototype/images/emoji-WyB.png
+    - assets/prototype/images/auto-group-iqjv.png
+    - assets/prototype/images/enter-key-UVj.png
+    - assets/prototype/images/checkboxes-Tc9.png
+    - assets/prototype/images/backspace-Wf7.png
+    - assets/prototype/images/checkboxes-13j.png
+    - assets/prototype/images/leading-icon-z3o.png
+    - assets/prototype/images/st-trailing-icon-viZ.png
+    - assets/prototype/images/enter-key-HD7.png
+    - assets/prototype/images/q-uMF.png
+    - assets/prototype/images/group-1-Kr5.png
+    - assets/prototype/images/light-color-key-border03-uss.png
+    - assets/prototype/images/auto-group-kz2y.png
+    - assets/prototype/images/left-shift-ApD.png
+    - assets/prototype/images/checkboxes-hbB.png
+    - assets/prototype/images/emoji-2PP.png
+    - assets/prototype/images/emoji-hU1.png
+    - assets/prototype/images/checkboxes-NWZ.png
+    - assets/prototype/images/light-color-key-border03-n1s.png
+    - assets/prototype/images/leading-icon-x3o.png
+    - assets/prototype/images/q-gP7.png
+    - assets/prototype/images/checkboxes-1R7.png
+    - assets/prototype/images/st-trailing-icon-KFj.png
+    - assets/prototype/images/checkboxes-u3B.png
+    - assets/prototype/images/backspace-QHs.png
+    - assets/prototype/images/group-1-6zZ.png
+    - assets/prototype/images/auto-group-tpl1.png
+    - assets/prototype/images/enter-key-XyP.png
+    - assets/prototype/images/auto-group-mh25.png
+    - assets/prototype/images/auto-group-ro8q.png
+    - assets/prototype/images/q-gTF.png
+    - assets/prototype/images/leading-icon-j9F.png
+    - assets/prototype/images/emoji-eBo.png
+    - assets/prototype/images/st-trailing-icon-ANy.png
+    - assets/prototype/images/backspace-MnD.png
+    - assets/prototype/images/checkboxes-4e1.png
+    - assets/prototype/images/light-color-key-border03-tEH.png
+    - assets/prototype/images/group-1-kDB.png
+    - assets/prototype/images/left-shift-kt5.png
+    - assets/prototype/images/checkboxes-XFs.png
+    - assets/prototype/images/st-trailing-icon-T49.png
+    - assets/prototype/images/enter-key-6Vb.png
+    - assets/prototype/images/left-shift-bFK.png
+    - assets/prototype/images/checkboxes-jPs.png
+    - assets/prototype/images/leading-icon-j8h.png
+    - assets/prototype/images/q-vMj.png
+    - assets/prototype/images/checkboxes-VTB.png
+    - assets/prototype/images/light-color-key-border03-yNM.png
+    - assets/prototype/images/group-1-TYR.png
+    - assets/prototype/images/checkboxes-7k9.png
+    - assets/prototype/images/checkboxes-eCu.png
+    - assets/prototype/images/backspace-1T3.png
+    - assets/prototype/images/group-1-T7B.png
+    - assets/prototype/images/emoji-o17.png
+    - assets/prototype/images/light-color-key-border03-gKo.png
+    - assets/prototype/images/leading-icon-EWH.png
+    - assets/prototype/images/enter-key-JaZ.png
+    - assets/prototype/images/left-shift-woB.png
+    - assets/prototype/images/enter-key-C4D.png
+    - assets/prototype/images/backspace-P7s.png
+    - assets/prototype/images/emoji-Siq.png
+    - assets/prototype/images/checkboxes-SxM.png
+    - assets/prototype/images/checkboxes-Tkh.png
+    - assets/prototype/images/q-U21.png
+    - assets/prototype/images/st-trailing-icon-KMo.png
+    - assets/prototype/images/checkboxes-s7j.png
+    - assets/prototype/images/st-trailing-icon-HWm.png
+    - assets/prototype/images/q-swT.png
+    - assets/prototype/images/left-shift-wAd.png
+    - assets/prototype/images/q-gmj.png
+    - assets/prototype/images/left-shift-uqw.png
+    - assets/prototype/images/enter-key-QYd.png
+    - assets/prototype/images/checkboxes-dCy.png
+    - assets/prototype/images/group-1-2TX.png
+    - assets/prototype/images/image-4.png
+    - assets/prototype/images/emoji-Zch.png
+    - assets/prototype/images/checkboxes-8Bw.png
+    - assets/prototype/images/auto-group-a8ey.png
+    - assets/prototype/images/emoji-aJR.png
+    - assets/prototype/images/auto-group-w94h.png
+    - assets/prototype/images/st-trailing-icon-4nZ.png
+    - assets/prototype/images/checkboxes-aQm.png
+    - assets/prototype/images/backspace-Xsj.png
+    - assets/prototype/images/checkboxes-qzD.png
+    - assets/prototype/images/checkboxes-Scd.png
+    - assets/prototype/images/leading-icon-Srq.png
+    - assets/prototype/images/left-shift-LFP.png
+    - assets/prototype/images/checkboxes-Y7f.png
+    - assets/prototype/images/emoji-gBf.png
+    - assets/prototype/images/left-shift-wrd.png
+    - assets/prototype/images/light-color-key-border03-eFF.png
+    - assets/prototype/images/leading-icon-Yzq.png
+    - assets/prototype/images/backspace-Q1T.png
+    - assets/prototype/images/group-1-F25.png
+    - assets/prototype/images/light-color-key-border03-Aeq.png
+    - assets/prototype/images/group-1-hem.png
+    - assets/prototype/images/checkboxes-aFF.png
+    - assets/prototype/images/checkboxes-VJD.png
+    - assets/prototype/images/auto-group-wszb.png
+    - assets/prototype/images/light-color-key-border03-p3X.png
+    - assets/prototype/images/enter-key-nt5.png
+    - assets/prototype/images/left-shift-P1f.png
+    - assets/prototype/images/emoji-yyw.png
+    - assets/prototype/images/q-Dzd.png
+    - assets/prototype/images/backspace-4Bw.png
+    - assets/prototype/images/checkboxes-ATF.png
+    - assets/prototype/images/enter-key-pL5.png
+    - assets/prototype/images/backspace-wyf.png
+    - assets/prototype/images/checkboxes-8Cu.png
+    - assets/prototype/images/checkboxes-zUd.png
+    - assets/prototype/images/st-trailing-icon-q3K.png
+    - assets/prototype/images/light-color-key-border03-shF.png
+    - assets/prototype/images/leading-icon-4mT.png
+    - assets/prototype/images/st-trailing-icon-j9P.png
+    - assets/prototype/images/leading-icon-aff.png
+    - assets/prototype/images/light-color-key-border03-XFs.png
+    - assets/prototype/images/enter-key-Rc9.png
+    - assets/prototype/images/auto-group-jx6h.png
+    - assets/prototype/images/auto-group-jhlh.png
+    - assets/prototype/images/st-trailing-icon-KG1.png
+    - assets/prototype/images/checkboxes-qss.png
+    - assets/prototype/images/group-1-PVP.png
+    - assets/prototype/images/checkboxes-fSu.png
+    - assets/prototype/images/group-1-Ubw.png
+    - assets/prototype/images/backspace-a6Z.png
+    - assets/prototype/images/emoji-XM7.png
+    - assets/prototype/images/left-shift-Tm7.png
+    - assets/prototype/images/enter-key-La1.png
+    - assets/prototype/images/checkboxes-Qjw.png
+    - assets/prototype/images/q-vS1.png
+    - assets/prototype/images/leading-icon-GRK.png
+    - assets/prototype/images/checkboxes-q1w.png
+    - assets/prototype/images/q-Yso.png
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
