@@ -239,22 +239,50 @@ class _FiltersState extends State<Filters> {
                                                       height: 40*fem,
                                                     ),
                                                   ),
-                                                  
-                                                  Container(
+                                                  Positioned(
+                                                    left: 23*fem,
+                                                    top: 30*fem,
+                                                    child: Container(
+                                                      width: 245*fem,
+                                                      height: 56*fem,
+                                                      child: DropdownSearch<String>(
                                                     // supportingtext8vq (I71:6183;52977:33952)
-                                                    margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 2.3*fem),
-                                                    child: 
-                                                    Text(
-                                                      'University',
-                                                      style: SafeGoogleFont (
-                                                        'Roboto',
-                                                        fontSize: 16*ffem,
-                                                        fontWeight: FontWeight.w400,
-                                                        height: 1.5*ffem/fem,
-                                                        letterSpacing: 0.5*fem,
-                                                        color: Color(0xff49454f),
+                                                    // margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 2.3*fem),
+                                                        popupProps: PopupProps.menu(showSelectedItems: true),
+                                                        items: universities,
+                                                        selectedItem: 'University',
+                                                        dropdownDecoratorProps: DropDownDecoratorProps(
+                                                          dropdownSearchDecoration: InputDecoration(
+                                                            labelText: "Universities",
+                                                            labelStyle: TextStyle (
+                                                              fontFamily: 'Roboto',
+                                                              fontSize: 16 * ffem,
+                                                              fontWeight: FontWeight.w400,
+                                                              height: 1.5 * ffem / fem,
+                                                              letterSpacing: 0.5 * fem,
+                                                              color: Color(0xff49454f),
+                                                            ),
+                                                          ),
+                                                        ),
+                                                        
                                                       ),
                                                     ),
+                                                  ),
+                                                  // Container(
+                                                  //   // supportingtext8vq (I71:6183;52977:33952)
+                                                  //   margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 2.3*fem),
+                                                  //   child: 
+                                                  //   Text(
+                                                  //     'University',
+                                                  //     style: SafeGoogleFont (
+                                                  //       'Roboto',
+                                                  //       fontSize: 16*ffem,
+                                                  //       fontWeight: FontWeight.w400,
+                                                  //       height: 1.5*ffem/fem,
+                                                  //       letterSpacing: 0.5*fem,
+                                                  //       color: Color(0xff49454f),
+                                                  //     ),
+                                                  //   ),
                                                     // DropdownSearch<String>(
                                                     //   popupProps: PopupProps.menu(showSelectedItems: true),
                                                     //   items: universities,
@@ -263,7 +291,7 @@ class _FiltersState extends State<Filters> {
                                                     //     dropdownSearchDecoration: InputDecoration(labelText: "Universities"),
                                                     //   ),
                                                     // ),
-                                                  ), 
+                                                  // ), 
                                                 ],
                                               ),
                                             ),
