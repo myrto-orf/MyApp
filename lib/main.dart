@@ -1,63 +1,69 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/utils.dart';
 import 'package:myapp/prototype/start.dart';
+import 'dart:async';
+import 'package:camera/camera.dart';
 
-// import 'package:myapp/about/.dart';
-// import 'package:myapp/about/google-play-students-abroad-social-connect-with-students-all-over-the-world-students-abroad-student-profile-.dart';
-// import 'package:myapp/about/user-modeling-adaptation-collaborative-crowdsourcing-social-computing-chat-.dart';
-// import 'package:myapp/about/input-gestures-action-scroll-scroll-chat-camera-audio-chat-.dart';
-// import 'package:myapp/about/chat-chat-gps-.dart';
-// import 'package:myapp/assets/screens.dart';
-// import 'package:myapp/assets/styles.dart';
-// import 'package:myapp/assets/components.dart';
-//import 'package:myapp/prototype/userprofile.dart';
-// import 'package:myapp/prototype/viewprofile.dart';
-// import 'package:myapp/prototype/people.dart';
-// import 'package:myapp/prototype/map-athens.dart';
-// import 'package:myapp/prototype/map-greece.dart';
-// import 'package:myapp/prototype/map-europe.dart';
-// import 'package:myapp/prototype/people-connect.dart';
-// import 'package:myapp/prototype/filters-ntua.dart';
-// import 'package:myapp/prototype/filters-athens.dart';
-// import 'package:myapp/prototype/dm-1.dart';
-// import 'package:myapp/prototype/filters.dart';
-// import 'package:myapp/prototype/filters-level-of-education.dart';
-// import 'package:myapp/prototype/filters-level-of-education-checked.dart';
-// import 'package:myapp/prototype/filters-level-of-education-checked-fQq.dart';
-// import 'package:myapp/prototype/chat.dart';
-// import 'package:myapp/prototype/muted-chat.dart';
-// import 'package:myapp/prototype/deleted-chat.dart';
-// import 'package:myapp/prototype/menu.dart';
-// import 'package:myapp/prototype/basic-dialog.dart';
-// import 'package:myapp/prototype/basic-dialog-y2V.dart';
-// import 'package:myapp/prototype/dm-2.dart';
-// import 'package:myapp/prototype/new-profile.dart';
-// import 'package:myapp/prototype/see-more.dart';
-// import 'package:myapp/prototype/rectangle-35.dart';
-// import 'package:myapp/prototype/filters-level-of-education-checked-qtH.dart';
-// import 'package:myapp/prototype/uni-search-variant10.dart';
-// import 'package:myapp/prototype/uni-search-variant9.dart';
-// import 'package:myapp/prototype/uni-search-variant8.dart';
-// import 'package:myapp/prototype/uni-search-variant7.dart';
-// import 'package:myapp/prototype/uni-search-variant6.dart';
-// import 'package:myapp/prototype/uni-search-variant5.dart';
-// import 'package:myapp/prototype/uni-search-variant4.dart';
-// import 'package:myapp/prototype/uni-search-variant3.dart';
-// import 'package:myapp/prototype/uni-search-variant2.dart';
-// import 'package:myapp/prototype/uni-search-variant2-SUd.dart';
-// import 'package:myapp/prototype/uni-search-variant2-L7f.dart';
-//import 'package:myapp/prototype/camera.dart';
+late List<CameraDescription> cameras;
+late CameraDescription firstCamera;
+late Future<void> _initializeControllerFuture;
 
-void main() => runApp(MyApp());
+Future<void> main() async{//=> runApp(MyApp());
+// Ensure that plugin services are initialized so that `availableCameras()`
+// can be called before `runApp()`
+WidgetsFlutterBinding.ensureInitialized();
+
+// Obtain a list of the available cameras on the device.
+final cameras = await availableCameras();
+
+// Get a specific camera from the list of available cameras.
+firstCamera = cameras.first;
+runApp(MyApp());
+}
 
 
-class MyApp extends StatelessWidget {
-  const MyApp ({Key? key}) : super(key: key);
-  
-	@override
+class MyApp extends StatefulWidget {
+  //MyApp ({Key? key}) : super(key: key);
+   @override
+  _MyState createState() => _MyState(); 
+}
+
+class _MyState extends State<MyApp> {
+  late CameraController controller;
+  late List<CameraDescription> cameras; // Initialize cameras field
+
+  @override
+  void initState() {
+    super.initState();
+
+    // Get available cameras and set the first one as the default
+    availableCameras().then((availableCameras) {
+      cameras = availableCameras;
+      controller = CameraController(
+        cameras[0],
+        ResolutionPreset.low,
+      );
+
+      // Initialize the controller
+      controller.initialize().then((_) {
+        if (!mounted) {
+          return;
+        }
+        setState(() {});
+      });
+    });
+  }
+  @override
+  void dispose() {
+    // Dispose of the controller when the widget is disposed.
+    controller.dispose();
+    super.dispose();
+  }
+
+  @override
 	Widget build(BuildContext context) {
 	return MaterialApp(
-		title: 'Flutter',
+		title: 'Students Abroad',
 		debugShowCheckedModeBanner: false,
 		scrollBehavior: MyCustomScrollBehavior(),
 		theme: ThemeData(
@@ -65,11 +71,10 @@ class MyApp extends StatelessWidget {
 		),
 		home: Scaffold(
 		  body: SingleChildScrollView(
-			  // ignore: prefer_const_constructors
 			  child: Start(),
 		  ),
 		),
-	);
-  }
+  );
+  }  
 }
 

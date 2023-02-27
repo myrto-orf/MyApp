@@ -1,5 +1,3 @@
-// ignore_for_file: prefer_const_constructors
-
 import 'package:flutter/material.dart';
 import 'package:myapp/utils.dart';
 import 'package:myapp/prototype/register.dart';
@@ -81,7 +79,6 @@ class _LoginState extends State<Login> {
                       Container(
                         width: 150 * fem,
                         child: TextField(
-                          // ignore: prefer_const_constructors
                           decoration: InputDecoration(
                             icon: Image.asset(
                           'assets/prototype/images/key-02.png',
@@ -134,7 +131,6 @@ class _LoginState extends State<Login> {
                 ),
               ),
               Positioned(
-              // paperplanepaperairplaneiconchr (115:4058)
               left: 150*fem,
               top: 320*fem,
               child: Align(
@@ -149,7 +145,6 @@ class _LoginState extends State<Login> {
               ),
             ),
             Positioned(
-              // signintoyouraccount2eh (99:5241)
               left: 150*fem,
               top: 500*fem,
               child: Align(
@@ -171,7 +166,6 @@ class _LoginState extends State<Login> {
               ),
             ),
               Positioned(
-                // buttonRectangle10842661Oz (168:7381)
                 left: 200*fem,
                 top: 750*fem,
                 child: Container(

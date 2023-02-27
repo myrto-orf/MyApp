@@ -3,8 +3,79 @@ import 'package:flutter/gestures.dart';
 import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:csv/csv.dart';
+import 'dart:async';
+import 'package:flutter/services.dart' show rootBundle;
 
-class Map extends StatelessWidget {
+// void main() => runApp(Map());
+
+// class Map extends StatefulWidget {
+//   @override
+//   _MapState createState() => _MapState();
+// }
+
+// class _MapState extends State<Map> {
+//   Completer<GoogleMapController> _controller = Completer();
+//   static const LatLng _center = const LatLng(45.521563, -122.677433);
+//   Set<Marker> _markers = {};
+
+//   Future<void> _readCsv() async {
+//     final csvString = await rootBundle.loadString('Students-Abroad/lib/prototype/universities_geocoded.csv');
+//     List<List<dynamic>> rowsAsListOfValues = const CsvToListConverter().convert(csvString);
+
+//     for (final row in rowsAsListOfValues) {
+//       final universityName = row[0] as String?;
+//       final latitude = double.tryParse(row[2] as String? ?? '');
+//       final longitude = double.tryParse(row[3] as String? ?? '');
+//       if (latitude != null && longitude != null && universityName != null) {
+//         _markers.add(
+//           Marker(
+//             markerId: MarkerId(universityName),
+//             position: LatLng(latitude, longitude),
+//             infoWindow: InfoWindow(title: universityName),
+//           ),
+//         );
+//       }
+//     }
+//   }
+
+//   @override
+//   void initState() {
+//     super.initState();
+//     _readCsv().then((_) {
+//       setState(() {});
+//     });
+//   }
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       home: Scaffold(
+//         appBar: AppBar(
+//           title: Text('Universities Map'),
+//         ),
+//         body: GoogleMap(
+//           onMapCreated: (GoogleMapController controller) {
+//             _controller.complete(controller);
+//           },
+//           markers: _markers,
+//           initialCameraPosition: CameraPosition(
+//             target: _center,
+//             zoom: 5.0,
+//           ),
+//         ),
+//       ),
+//     );
+//   }
+// }
+
+class Map extends StatefulWidget{
+  @override 
+  State<StatefulWidget> createState() => _MapState();
+}
+
+class _MapState extends State<Map> {
   @override
   Widget build(BuildContext context) {
     double baseWidth = 390;
@@ -182,7 +253,7 @@ class Map extends StatelessWidget {
                                     height: 50*fem,
                                     child: Column(
                                       crossAxisAlignment: CrossAxisAlignment.center,
-                                      children: [                                     //---------------einai to trigwnaki, pisteuv delete
+                                      children: [
                                         Container(
                                           // iconcontainerNQD (I167:4875;53105:27290;52031:21333)
                                           margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 4*fem),

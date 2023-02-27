@@ -1,5 +1,3 @@
-// ignore_for_file: prefer_const_constructors
-
 import 'package:flutter/material.dart';
 import 'package:myapp/utils.dart';
 import 'package:myapp/prototype/new-profile.dart';
@@ -27,7 +25,6 @@ class _RegisterState extends State<Register> {
        resizeToAvoidBottomInset: false,
       backgroundColor: Colors.white,
       body: Container(
-        // register6Um (168:4652)
         padding: EdgeInsets.fromLTRB(32*fem, 120*fem, 36*fem, 228*fem),
         width: double.infinity,
        
@@ -35,7 +32,6 @@ class _RegisterState extends State<Register> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Container(
-              // paperplanepaperairplaneiconchr (168:4664)
               margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 30*fem, 80*fem),
               width: 100*fem,
               height: 85*fem,
@@ -45,7 +41,6 @@ class _RegisterState extends State<Register> {
               ),
             ),
             Container(
-              // group2608582c5j (168:4672)
               margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 12*fem, 10*fem),
               padding: EdgeInsets.fromLTRB(21.25*fem, 10.38*fem, 201*fem, 12*fem),
               width: double.infinity,
@@ -76,7 +71,6 @@ class _RegisterState extends State<Register> {
               ),
             ),
             Container(
-              // group2608583nH3 (168:4677)
               margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 12*fem, 10*fem),
               padding: EdgeInsets.fromLTRB(23.25*fem, 11.38*fem, 203*fem, 13*fem),
               width: double.infinity,
@@ -107,7 +101,6 @@ class _RegisterState extends State<Register> {
               ),
             ),
             Container(
-              // autogroupqnuborM (4M152wqxWxDNa5F6aSqNub)
               margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 12*fem, 10*fem),
               padding: EdgeInsets.fromLTRB(23.25*fem, 11.38*fem, 187*fem, 12*fem),
               width: double.infinity,
@@ -138,7 +131,6 @@ class _RegisterState extends State<Register> {
               ),
             ),
             Container(
-              // group2608586taH (168:4688)
               margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 12*fem, 10*fem),
               padding: EdgeInsets.fromLTRB(23.25*fem, 11.38*fem, 171*fem, 12*fem),
               width: double.infinity,
@@ -169,7 +161,6 @@ class _RegisterState extends State<Register> {
               ),
             ),
             Container(
-              // group2608586taH (168:4688)
               margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 12*fem, 10*fem),
               padding: EdgeInsets.fromLTRB(23.25*fem, 11.38*fem, 171*fem, 12*fem),
               width: double.infinity,
@@ -200,7 +191,6 @@ class _RegisterState extends State<Register> {
               ),
             ),
            Container(
-              // group2608586taH (168:4688)
               margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 12*fem, 10*fem),
               padding: EdgeInsets.fromLTRB(23.25*fem, 11.38*fem, 171*fem, 12*fem),
               width: double.infinity,
@@ -231,7 +221,6 @@ class _RegisterState extends State<Register> {
               ),
             ),
                  Container(
-              // group2608586taH (168:4688)
               margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 12*fem, 10*fem),
               padding: EdgeInsets.fromLTRB(23.25*fem, 11.38*fem, 171*fem, 12*fem),
               width: double.infinity,
@@ -262,7 +251,6 @@ class _RegisterState extends State<Register> {
               ),
             ),
             Container(
-              // group2608597YXf (190:5321)
                margin: EdgeInsets.only(top: 10),
               width: 319*fem,
               height: 50*fem,
@@ -270,7 +258,6 @@ class _RegisterState extends State<Register> {
                 borderRadius: BorderRadius.circular(100*fem),
               ),
               child: TextButton(
-                // buttoneKo (168:4660)
                 onPressed: () {
                   Navigator.push(
                           context,

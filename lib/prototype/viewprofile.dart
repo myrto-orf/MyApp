@@ -3,29 +3,40 @@ import 'package:flutter/gestures.dart';
 import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
+import 'package:myapp/prototype/map-athens.dart';
+import 'package:myapp/prototype/people.dart';
+import 'package:myapp/prototype/chat.dart';
+import 'package:myapp/prototype/userprofile.dart';
 
-class Scene extends StatelessWidget {
+
+class ViewProfile extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     double baseWidth = 390;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
-    return Container(
-      width: double.infinity,
+    return Scaffold(
+      body: SingleChildScrollView(
       child: Container(
         // viewprofileUhK (145:4151)
         width: double.infinity,
-        height: 1316*fem,
+        height: 830*fem,
         decoration: BoxDecoration (
           color: Color(0xffffffff),
         ),
-        child: Stack(
+        child: 
+        
+        Stack(
           children: [
             Positioned(
               // connectionsKhw (145:4152)
-              left: 33*fem,
+              left: 133*fem,
               top: 761*fem,
-              child: Align(
+              child: 
+              NWidget(),
+              /*
+              Align(
                 child: SizedBox(
                   width: 101*fem,
                   height: 18*fem,
@@ -41,6 +52,7 @@ class Scene extends StatelessWidget {
                   ),
                 ),
               ),
+              */
             ),
             Positioned(
               // georgepapadopoulosXZ7 (145:4155)
@@ -292,8 +304,7 @@ class Scene extends StatelessWidget {
                           width: 390*fem,
                           height: 273*fem,
                           child: Image.asset(
-                            'assets/prototype/images/image-2-Hgq.png',
-                          ),
+                            'assets/prototype/images/image-2-Hgq2.png'),
                         ),
                       ),
                     ),
@@ -305,6 +316,7 @@ class Scene extends StatelessWidget {
                         width: 134*fem,
                         height: 134*fem,
                         decoration: BoxDecoration (
+                          borderRadius: BorderRadius.circular(70*fem),
                           boxShadow: [
                             BoxShadow(
                               color: Color(0x3f000000),
@@ -367,6 +379,8 @@ class Scene extends StatelessWidget {
                 ),
               ),
             ),
+
+            /*
             Positioned(
               // about53T (145:4165)
               left: 33*fem,
@@ -1334,343 +1348,179 @@ class Scene extends StatelessWidget {
                 ),
               ),
             ),
-            Positioned(
-              // navigationbarmsj (145:4220)
-              left: 0*fem,
-              top: 1243*fem,
-              child: Container(
-                padding: EdgeInsets.fromLTRB(8*fem, 0*fem, 28.97*fem, 0*fem),
-                width: 412*fem,
-                height: 77*fem,
-                decoration: BoxDecoration (
-                  color: Color(0xb271b5ad),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Color(0x3f000000),
-                      offset: Offset(4*fem, 0*fem),
-                      blurRadius: 2*fem,
-                    ),
-                  ],
-                ),
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    TextButton(
-                      // group2608533BRf (I145:4220;53105:27301)
-                      onPressed: () {},
-                      style: TextButton.styleFrom (
-                        padding: EdgeInsets.zero,
-                      ),
-                      child: Container(
-                        padding: EdgeInsets.fromLTRB(34.93*fem, 12*fem, 34.93*fem, 15*fem),
-                        width: 101.87*fem,
-                        height: double.infinity,
-                        child: Container(
-                          // group26085324kM (I145:4220;53105:27298)
-                          width: double.infinity,
-                          height: double.infinity,
-                          child: Stack(
-                            children: [
-                              Positioned(
-                                // vectorbkH (I145:4220;53105:27297)
-                                left: 7.0666503906*fem,
-                                top: 11*fem,
-                                child: Align(
-                                  child: SizedBox(
-                                    width: 18*fem,
-                                    height: 18*fem,
-                                    child: Image.asset(
-                                      'assets/prototype/images/vector-ta1.png',
-                                      width: 18*fem,
-                                      height: 18*fem,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Positioned(
-                                // segment35fT (I145:4220;53105:27290)
-                                left: 0*fem,
-                                top: 0*fem,
-                                child: Container(
-                                  width: 32*fem,
-                                  height: 50*fem,
-                                  child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.center,
-                                    children: [
-                                      Container(
-                                        // iconcontainerxz9 (I145:4220;53105:27290;52031:21333)
-                                        margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 4*fem),
-                                        width: 32*fem,
-                                        height: 32*fem,
-                                        child: Image.asset(
-                                          'assets/prototype/images/icon-container-Zzd.png',
-                                          width: 32*fem,
-                                          height: 32*fem,
-                                        ),
-                                      ),
-                                      Text(
-                                        // labeltextSuK (I145:4220;53105:27290;50721:10430)
-                                        'Map',
-                                        textAlign: TextAlign.center,
-                                        style: SafeGoogleFont (
-                                          'Almarai',
-                                          fontSize: 12*ffem,
-                                          fontWeight: FontWeight.w700,
-                                          height: 1.115*ffem/fem,
-                                          color: Color(0xff49454f),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                    Container(
-                      // autogroupbmbtkQD (4LxzRzdduVbHYYepUDbMbT)
-                      margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 32.43*fem, 0*fem),
-                      width: 203.73*fem,
-                      height: double.infinity,
-                      child: Stack(
-                        children: [
-                          Positioned(
-                            // group2608530F65 (I145:4220;53105:27283)
-                            left: 0*fem,
-                            top: 0*fem,
-                            child: TextButton(
-                              onPressed: () {},
-                              style: TextButton.styleFrom (
-                                padding: EdgeInsets.zero,
-                              ),
-                              child: Container(
-                                padding: EdgeInsets.fromLTRB(31.43*fem, 12*fem, 31.43*fem, 15*fem),
-                                width: 101.87*fem,
-                                height: 77*fem,
-                                child: Container(
-                                  // segment3W21 (I145:4220;53104:27381)
-                                  width: double.infinity,
-                                  height: double.infinity,
-                                  child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.center,
-                                    children: [
-                                      Container(
-                                        // autogroupsqwdq4H (4Lxzd9yhvz2m3sKYB8SqWd)
-                                        margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 4*fem),
-                                        width: 32*fem,
-                                        height: 32*fem,
-                                        child: Image.asset(
-                                          'assets/prototype/images/auto-group-sqwd.png',
-                                          width: 32*fem,
-                                          height: 32*fem,
-                                        ),
-                                      ),
-                                      Text(
-                                        // labeltextupq (I145:4220;53104:27381;50721:10430)
-                                        'People',
-                                        textAlign: TextAlign.center,
-                                        style: SafeGoogleFont (
-                                          'Almarai',
-                                          fontSize: 12*ffem,
-                                          fontWeight: FontWeight.w700,
-                                          height: 1.115*ffem/fem,
-                                          color: Color(0xff49454f),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                          Positioned(
-                            // group2608534cz9 (I145:4220;53114:27313)
-                            left: 101.8666381836*fem,
-                            top: 0*fem,
-                            child: TextButton(
-                              onPressed: () {},
-                              style: TextButton.styleFrom (
-                                padding: EdgeInsets.zero,
-                              ),
-                              child: Container(
-                                padding: EdgeInsets.fromLTRB(34.93*fem, 12*fem, 34.93*fem, 15*fem),
-                                width: 101.87*fem,
-                                height: 77*fem,
-                                child: Container(
-                                  // segment3sfB (I145:4220;53114:27305)
-                                  width: double.infinity,
-                                  height: double.infinity,
-                                  child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.center,
-                                    children: [
-                                      Container(
-                                        // autogroup3jvx1WV (4Ly17izSGP3uZUYwpm3jVX)
-                                        margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 4*fem),
-                                        width: double.infinity,
-                                        height: 32*fem,
-                                        child: Stack(
-                                          children: [
-                                            Positioned(
-                                              // iconcontainer7pR (I145:4220;53114:27305;52031:21333)
-                                              left: 0*fem,
-                                              top: 0*fem,
-                                              child: Align(
-                                                child: SizedBox(
-                                                  width: 32*fem,
-                                                  height: 32*fem,
-                                                  child: Image.asset(
-                                                    'assets/prototype/images/icon-container-daV.png',
-                                                    width: 32*fem,
-                                                    height: 32*fem,
-                                                  ),
-                                                ),
-                                              ),
-                                            ),
-                                            Positioned(
-                                              // vectornQm (I145:4220;53114:27310)
-                                              left: 6.0666503906*fem,
-                                              top: 6*fem,
-                                              child: Align(
-                                                child: SizedBox(
-                                                  width: 19*fem,
-                                                  height: 21.28*fem,
-                                                  child: Image.asset(
-                                                    'assets/prototype/images/vector-ycH.png',
-                                                    width: 19*fem,
-                                                    height: 21.28*fem,
-                                                  ),
-                                                ),
-                                              ),
-                                            ),
-                                            Positioned(
-                                              // badgerfX (I145:4220;53114:27311)
-                                              left: 16.0666503906*fem,
-                                              top: 1*fem,
-                                              child: Container(
-                                                width: 16*fem,
-                                                height: 16*fem,
-                                                decoration: BoxDecoration (
-                                                  color: Color(0xffb3261e),
-                                                  borderRadius: BorderRadius.circular(100*fem),
-                                                ),
-                                                child: Center(
-                                                  child: Center(
-                                                    child: Text(
-                                                      '3',
-                                                      textAlign: TextAlign.center,
-                                                      style: SafeGoogleFont (
-                                                        'Roboto',
-                                                        fontSize: 11*ffem,
-                                                        fontWeight: FontWeight.w500,
-                                                        height: 1.4545454545*ffem/fem,
-                                                        letterSpacing: 0.5*fem,
-                                                        color: Color(0xffffffff),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                ),
-                                              ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                      Container(
-                                        // labeltextFhf (I145:4220;53114:27305;50721:10430)
-                                        margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 0*fem),
-                                        child: Text(
-                                          'Chat',
-                                          textAlign: TextAlign.center,
-                                          style: SafeGoogleFont (
-                                            'Almarai',
-                                            fontSize: 12*ffem,
-                                            fontWeight: FontWeight.w700,
-                                            height: 1.115*ffem/fem,
-                                            color: Color(0xff49454f),
-                                          ),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    Container(
-                      // segment2XQH (I145:4220;50721:10389)
-                      margin: EdgeInsets.fromLTRB(0*fem, 12*fem, 0*fem, 15*fem),
-                      width: 37*fem,
-                      height: double.infinity,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Container(
-                            // autogroupi7evDH7 (4Ly1o3CGCyS7cLiwZai7eV)
-                            margin: EdgeInsets.fromLTRB(2.5*fem, 0*fem, 2.5*fem, 4*fem),
-                            width: double.infinity,
-                            height: 32*fem,
-                            child: Stack(
-                              children: [
-                                Positioned(
-                                  // iconcontainerK5F (I145:4220;50721:10389;52031:21333)
-                                  left: 0*fem,
-                                  top: 0*fem,
-                                  child: Align(
-                                    child: SizedBox(
-                                      width: 32*fem,
-                                      height: 32*fem,
-                                      child: Image.asset(
-                                        'assets/prototype/images/icon-container-Tau.png',
-                                        width: 32*fem,
-                                        height: 32*fem,
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                                Positioned(
-                                  // avatars3davatar7yfb (I145:4220;53104:27345;52767:23892)
-                                  left: 4.0666503906*fem,
-                                  top: 4*fem,
-                                  child: Align(
-                                    child: SizedBox(
-                                      width: 25*fem,
-                                      height: 25*fem,
-                                      child: Image.asset(
-                                        'assets/prototype/images/avatars-3davatar7-Czh.png',
-                                        fit: BoxFit.cover,
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                          Text(
-                            // labeltext4BF (I145:4220;50721:10389;50721:10430)
-                            'Profile',
-                            textAlign: TextAlign.center,
-                            style: SafeGoogleFont (
-                              'Almarai',
-                              fontSize: 12*ffem,
-                              fontWeight: FontWeight.w700,
-                              height: 1.115*ffem/fem,
-                              color: Color(0xff49454f),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
+*/
+
           ],
         ),
+
       ),
-          );
+    ),
+    
+bottomNavigationBar: BottomAppBar(
+        color: Color(0xb271b5ad),
+        child: SizedBox(
+          height: 77*fem,
+          child: Row(
+            mainAxisSize: MainAxisSize.max,   // fit bottomNavigationBar from the one side to the other
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,  // commonly space children
+            children: <Widget>[         
+              //Map
+              Stack(
+                alignment: Alignment.bottomCenter,
+                children: [
+                  IconButton(
+                    onPressed: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context) => Map())
+                      );
+                    },
+                    icon: Image.asset('assets/prototype/images/vector-5au.png', width: 18*fem, height: 18*fem,),
+                  ),
+                  Positioned(
+                    bottom: 0,
+                    child: Text(
+                      "Map",
+                      style: SafeGoogleFont(
+                        'Almarai',
+                        fontSize: 12*ffem,
+                        fontWeight: FontWeight.w700,
+                        height: 1.115*ffem/fem,
+                        color: const Color(0xff49454f),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              //People
+              Stack(
+                alignment: Alignment.bottomCenter,
+                children: [
+                  IconButton(
+                    onPressed: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context) => People())
+                      );
+                    },
+                    icon: Image.asset('assets/prototype/images/auto-group-ksyz.png', width: 30*fem, height: 30*fem,),
+                  ),
+                  Positioned(
+                    bottom: 0,
+                    child: Text(
+                      "People",
+                      style: SafeGoogleFont(
+                        'Almarai',
+                        fontSize: 12*ffem,
+                        fontWeight: FontWeight.w700,
+                        height: 1.115*ffem/fem,
+                        color: const Color(0xff49454f),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              //Chat
+              Stack(
+                alignment: Alignment.bottomCenter,
+                children: [
+                  IconButton(
+                    onPressed: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context) => Chat())    
+                      );
+                    },
+                    icon: Image.asset('assets/prototype/images/vector-85T.png', width: 18*fem, height: 18*fem,),
+                  ),
+                  Positioned(
+                    bottom: 0,
+                    child: Text(
+                      "Chat",
+                      style: SafeGoogleFont(
+                        'Almarai',
+                        fontSize: 12*ffem,
+                        fontWeight: FontWeight.w700,
+                        height: 1.115*ffem/fem,
+                        color: const Color(0xff49454f),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            
+              Stack(
+                alignment: Alignment.bottomCenter,
+                children: [
+                  IconButton(
+                    onPressed: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context) => UserProfile())
+                      );
+                    },
+                    icon: Image.asset('assets/prototype/images/avatars-3davatar7-9b3.png', width: 20, height: 20,),
+                  ),
+                  Positioned(
+                    bottom: 0,
+                    child: Text(
+                      "Profile",
+                      style: SafeGoogleFont(
+                        'Almarai',
+                        fontSize: 12*ffem,
+                        fontWeight: FontWeight.w700,
+                        height: 1.115*ffem/fem,
+                        color: const Color(0xff49454f),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ),
+      ),       
+        
+    
+    );
+  }
+}
+
+class NWidget extends StatefulWidget {
+  @override
+  _NWidgetState createState() => _NWidgetState();
+}
+class _NWidgetState extends State<NWidget> {
+  bool _isPressed = false;
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: () {
+        setState(() {
+          _isPressed = !_isPressed;
+        });
+      },
+      child: Container(
+        margin: EdgeInsets.fromLTRB(0, 0, 8, 0),
+        width: 110,
+        height: 40,
+        decoration: BoxDecoration(
+          border: Border.all(color: Color(0xff79747e)),
+          color: _isPressed ? Color(0xff79747e) :Color(0xff0c797a),
+          borderRadius: BorderRadius.circular(100),
+        ),
+        child: Center(
+          child: Text(
+            _isPressed ? 'Disconnect' : 'Connect',
+            textAlign: TextAlign.center,
+            style: SafeGoogleFont (
+              'Roboto',
+              fontSize: 14,
+              fontWeight: FontWeight.w500,
+              height: 1.4285714286,
+              letterSpacing: 0.1000000015,
+              color: Color(0xffffffff),
+            ),
+          ),
+        ),
+      ),
+    );
   }
 }

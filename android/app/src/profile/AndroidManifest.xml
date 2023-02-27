@@ -5,4 +5,16 @@
          to allow setting breakpoints, to provide hot reload, etc.
     -->
     <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:label="test"
+        android:icon="@mipmap/ic_launcher">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD45_wBDLcR8VwsWKMSK1bPhj8c3iz_JLU"/>
+
+        <!-- Your other application components such as activities, services, etc. -->
+
+    </application>
 </manifest>
