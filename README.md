@@ -1,4 +1,4 @@
-# test
+# Students Abroad
 
 A new Flutter project for the course of Human-Computer Interaction 2022-2023 NTUA.
 
